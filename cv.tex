@@ -1,0 +1,262 @@
+% resume.tex
+% vim:set ft=tex spell:
+%project management in practice
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.35in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{hyperref}
+%\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+    {\setlength{\leftmargin}{#1}}%
+    \item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+    {\setlength{\leftmargin}{-0.5#1}}%
+    \item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\vspace{-0.05in}\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+    #1 &
+    #2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{\href{http://www.linkedin.com/in/liyi1989}{Yi Li}}}
+
+
+260 Safford st.\ \ Quincy, MA, USA, 02170\\
+(929) 231-7845\ \ \textbullet \ \ liyi.1989@gmail.com
+
+\end{center}
+\vspace{-0.25em}
+\hrule \vspace{-0.75em}
+\subsection*{Education}
+
+\begin{itemize}
+    \parskip=0.1em
+    \item[]
+    \headerrow
+        {\textbf{Northeastern University (2013-Expected May 2017)}}
+        {\textbf{Boston, MA}}
+    \\
+    \headerrow
+        {\emph{PhD in Statistics, Mathematics}}
+        {\emph{GPA: 4.00/4.00}}
+    \begin{itemize*}
+    	\item Preprint: Copula Correlation:  An Equitable Dependence Measure and Extension of Pearson’s Correlation.
+        \item Relevant courses: Mathematical Statistics, Machine/Statistical Learning, Partial Differential Equations, etc.
+    \end{itemize*}
+    \item[]
+    \headerrow
+        {\textbf{Northeastern University (2011-2013)}}
+        {\textbf{Boston, MA}}
+    \\
+    \headerrow
+        {\emph{Master's of Science in Operations Research, Mathematics}}
+        {\emph{GPA: 4.00/4.00}}
+    \begin{itemize*}
+        \item Relevant courses: Time Series Analysis, Applied Statistics, Operations Research, Financial Management.
+    \end{itemize*}
+
+\item[]
+    \headerrow
+        {\textbf{Yale University (Summer 2010)}}
+        {\textbf{New Haven, CT}}
+    \\
+    \headerrow
+        {\emph{Summer Session}}
+        {\emph{GPA: 4.00/4.00}}
+    \begin{itemize*}
+        \item Relevant course: Computational Finance (derivatives pricing and GARCH models)
+    \end{itemize*}
+
+\item[]
+    \headerrow
+        {\textbf{Fudan University (2007-2011)}}
+        {\textbf{Shanghai, China}}
+    \\
+    \headerrow
+        {\emph{Bachelor's of Science in Information and Computational Science, Mathematics}}
+        {\emph{GPA: 3.37/4.00}}
+    \begin{itemize*}
+        \item Relevant courses: Mathematical
+        Finance, Numerical Analysis, Mathematical Modeling, System Modeling, Optimal Control Theory, Differential Equations, Probability, Mathematical Analysis, C++ Programming etc.
+    \end{itemize*}
+
+
+\end{itemize}
+
+%=========================
+\hrule
+\vspace{-0.75em}
+\subsection*{Experience}
+
+\begin{itemize}
+    \parskip=0.1em
+    
+    \item[]
+    \headerrow
+        {\textbf{Quanto.ml}}
+        {\textbf{Boston, MA}}
+    \\
+    \headerrow
+        {\emph{Quantitative Analyst Intern}}
+        {\emph{Jun. 2015 -- Aug. 2015}}
+    \begin{itemize*}
+        \item Manipulating fundamental (panel) data for the listed companies with the Quantopian Research Platform(IPython Notebook based) with {\em pandas} and {\em seaborn}. Building machine learning algorithm for predicting the relative return.  
+    \end{itemize*}
+    
+    \item[]
+    \headerrow
+        {\textbf{LLX solutions}}
+        {\textbf{Waltham, MA}}
+    \\
+    \headerrow
+        {\emph{Biostatistician Intern}}
+        {\emph{Jun. 2015 -- Aug. 2015}}
+    \begin{itemize*}
+        \item Creating statistical analysis plans (SAP) based on protocols for drug development in phase II-IV.   
+    \end{itemize*}
+    
+    \item[]
+    \headerrow
+        {\textbf{DataRobot}}
+        {\textbf{Boston, MA}}
+    \\
+    \headerrow
+        {\emph{Data Science Intern}}
+        {\emph{Jun. 2014 -- Aug. 2014}}
+    \begin{itemize*}
+        \item Building repository for data manipulation, predictive models, visualization and reproducible research techniques with R(RStudio) and Python(IPython Notebook). Topics include GAM, PCA, LDA, PLS, MDS, SVM, KDE, clustering, R Markdown, Shiny, HDF5 files, etc.
+    \end{itemize*}
+    
+    
+    \item[]
+    \headerrow
+        {\textbf{Northeastern University}}
+        {\textbf{Boston, MA}}
+    \\
+    \headerrow
+        {\emph{Teaching Assistant/Math Tutor}}
+        {\emph{Sep. 2011 -- Apr. 2014}}
+    \begin{itemize*}
+        \item Diff eq \& Lin Alg, Numerical Analysis, Statistics for bioinformatics(creating Coursera-style online course).
+    \end{itemize*}
+    
+    \item[]
+    \headerrow
+        {\textbf{Bolton Works}}
+        {\textbf{East Hartford, CT}}
+    \\
+    \headerrow
+        {\emph{Math Advisor}}
+        {\emph{Dec. 2012 -- Jan. 2013}}
+    \begin{itemize*}
+        \item Dealing with the transformation matrix related to the 3D scanning equipments via MATLAB and VBScript.
+    \end{itemize*}
+    
+
+    \item[]
+    \headerrow
+        {\textbf{eXalt Solutions}}
+        {\textbf{Cambridge, MA}}
+    \\
+    \headerrow
+        {\emph{Data Management Specialist}}
+        {\emph{Oct. 2012 -- Nov. 2012}}
+    \begin{itemize*}
+        \item QA the user reports and SKU reports for different clients on daily bases with Excel.
+    \end{itemize*}
+
+
+
+
+
+\item[]
+    \headerrow
+        {\textbf{Meritco Services (Consulting Company)}}
+        {\textbf{Shanghai, China}}
+    \\
+    \headerrow
+        {\emph{Due Diligence Intern}}
+        {\emph{Aug. 2010}}
+    \begin{itemize*}
+        \item  Performed data entry and processing with Excel.
+    \end{itemize*}
+
+
+
+\end{itemize}
+%=========================
+\hrule \vspace{-0.75em}
+\subsection*{Academic Projects}
+\begin{itemize}
+    \parskip=0.1em
+\item[]
+    \headerrow
+        {\textbf{Forecasting conditional volatility with GARCH model}}{graduate course project}
+    \vspace{-0.2in}
+    \begin{itemize*}
+        \item Modeled conditional volatility of the financial data with GARCH family models with Matlab and R
+    \end{itemize*}
+\item[]
+    \headerrow
+        {\textbf{Revenue Management for the air cargo arrangement}}{graduate course project}
+    \vspace{-0.2in}
+    \begin{itemize*}
+        \item Modeled the single-leg air cargo revenue management by using the Markov Chain
+    \end{itemize*}
+
+\item[]
+    \headerrow
+        {\textbf{Optimal harvesting policy in marine reserves}}{\it{undergraduate thesis}}
+    \vspace{-0.2in}
+    \begin{itemize*}
+        \item Utilized the optimal control theory to simulate and find the optimal harvesting policy by using Matlab
+    \end{itemize*}
+
+
+\end{itemize}
+%==========================================================
+\hrule \vspace{-0.75em}
+\subsection*{Skills/Standard Exams}
+\begin{itemize}
+    \parskip=0.1em
+
+\item[]
+    \begin{itemize*}
+        \item R, MATLAB, Python, C++, SAS, git, LINGO, \LaTeX, MS-Offce
+        \item passed the Society of Actuaries(SOA) Exam P
+        \item RankII(C++) of the National(China) Computer Rank
+    Examination
+       \item National(China) High School Mathematical Olympiad first place
+       \item Fluent in Chinese and English
+    \end{itemize*}
+
+
+
+\end{itemize}
+\end{document}
